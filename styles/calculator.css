@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: rgb(220,220,220);
+  border: .25px solid rgb(142,142,142);
+  color: rgb(15,15,15);
+  float: left;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 5%;
+  text-align: center;
+  width: 25%;
+}
+
+.button:active {
+  background-color: rgb(150,150,150);
+}
+
+.button-0 {
+  padding-left: 10%;
+  text-align: left;
+  width: 50%;
+}
+
+.button-clear {
+  font-size: 18px;
+  padding: 6%;
+}
+
+.button-right {
+  background-color: rgb(246,135,44);
+  color: rgb(255,255,255);
+}
+
+.button-right:active {
+  background-color: rgb(163,91,32);
+  color: rgb(142,142,142);
+}
+
+.icon{
+  border-radius: 100px;
+  height: 12px;
+  position: absolute;
+  top: 5px;
+  width: 12px;
+}
+
+.icon-close {
+  background-color: rgb(255,50,0);
+  left: 8px;
+}
+
+.icon-max {
+  background-color: rgb(75,200,0);
+  left: 48px;
+}
+
+.icon-min {
+  background-color: rgb(255,165,0);
+  left: 28px;
+}
+
+.row::before,
+.row::after,
+.buttons:before,
+.buttons:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.screen {
+  background: rgb(100,100,100);
+  color: white;
+  font-size: 48px;
+  font-weight: 100;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+  text-align: right;
+}
+
+.screen-inner {
+ bottom: 5px;
+ font-size: 100%;
+ padding: 0 .25em;
+ position: absolute;
+ right: 0;
+}
+
+.shell {
+  background: rgba(110,103,103,.1);
+  border-radius: 2px 2px 5px 5px;
+  border: .5px solid rgb(50,50,50);
+  box-shadow: 0px 10px 25px 5px rgba(30,30,30,.4);
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+  margin: 10% auto;
+  overflow: hidden;
+  width: 235px;
+}
+
+.shell:before,
+.shell:after {
+  clear: both;
+  content: ' ';
+  display: table;
+}
