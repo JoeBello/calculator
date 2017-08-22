@@ -2,7 +2,7 @@ var Calculator = (function(Core) {
   'use strict';
 
   var innerScreen,
-      outerScreen
+      outerScreen,
       clear = document.getElementById('clear');
 
   function clickRouter(inputId) {
@@ -24,7 +24,7 @@ var Calculator = (function(Core) {
         event.stopPropagation();
         clickRouter(event.target.id);
         renderAC();
-      }.bind(this))
+      })
   }
 
   function renderAC() {
