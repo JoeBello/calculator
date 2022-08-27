@@ -1,4 +1,4 @@
-# MacOS Calculator
+# Calculator
 
 #### A JavaScript calculator based on the appearance and functionality of the native MacOS calculator.
 
